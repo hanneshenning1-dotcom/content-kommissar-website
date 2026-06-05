@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Kommissar – Social-Media-Profilcheck für B2B-Dienstleister</title>
+  <meta name="description" content="Der Content Kommissar prüft Social-Media-Auftritte von Unternehmen und zeigt, welche Inhalte Vertrauen schaffen, Sichtbarkeit erhöhen und Anfragen vorbereiten.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://content-kommissar.de">
+  <meta property="og:title"       content="Content Kommissar – Social-Media-Profilcheck für B2B-Dienstleister">
+  <meta property="og:description" content="Wir finden den Grund, warum dein Content keine Anfragen bringt.">
+  <meta property="og:locale"      content="de_DE">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://content-kommissar.de">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header class="nav-header" id="nav">
+  <div class="container nav-inner">
+
+    <a href="#hero" class="nav-logo" aria-label="Content Kommissar – Zurück zur Startseite">
+      <!-- Inline badge icon (small) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="30" height="30" aria-hidden="true" focusable="false">
+        <circle cx="20" cy="20" r="18" fill="none" stroke="#f5c518" stroke-width="1.5" stroke-dasharray="5 3" opacity="0.7"/>
+        <path d="M20 4 L33 9.5 L33 22 Q33 31 20 36 Q7 31 7 22 L7 9.5 Z" fill="#131d2e" stroke="#f5c518" stroke-width="1.8"/>
+        <circle cx="19" cy="19.5" r="7" fill="none" stroke="#f5c518" stroke-width="2"/>
+        <line x1="24.5" y1="25" x2="30" y2="30" stroke="#f5c518" stroke-width="2.8" stroke-linecap="round"/>
+      </svg>
+      <span>Content Kommissar</span>
+    </a>
+
+    <nav aria-label="Hauptnavigation">
+      <ul class="nav-links">
+        <li><a href="#prozess">Prüfung</a></li>
+        <li><a href="#angebote">Angebote</a></li>
+        <li><a href="#zielgruppe">Für wen</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <a href="mailto:kontakt@content-kommissar.de?subject=Kostenloser%20Profil-Check&body=Hallo%20Content%20Kommissar%2C%0A%0Aich%20m%C3%B6chte%20einen%20kostenlosen%20Profil-Check%20anfragen.%0A%0AMein%20Unternehmen%3A%20%0AMein%20Profil%2FWebsite%3A%20%0AMein%20Ziel%3A%20%0A"
+       class="btn btn-primary btn-sm" style="display:none;" id="nav-cta">
+      Profil-Check anfragen
+    </a>
+
+    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile navigation (revealed by JS) -->
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+  <a href="#prozess">Prüfung</a>
+  <a href="#angebote">Angebote</a>
+  <a href="#zielgruppe">Für wen</a>
+  <a href="#faq">FAQ</a>
+  <a href="mailto:kontakt@content-kommissar.de?subject=Kostenloser%20Profil-Check&body=Hallo%20Content%20Kommissar%2C%0A%0Aich%20m%C3%B6chte%20einen%20kostenlosen%20Profil-Check%20anfragen.%0A%0AMein%20Unternehmen%3A%20%0AMein%20Profil%2FWebsite%3A%20%0AMein%20Ziel%3A%20%0A"
+     class="btn btn-primary btn-md">Profil-Check anfragen</a>
+</nav>
+
+<main>
+
+  <!-- ============================================================
+       1. HERO SECTION
+       ============================================================ -->
+  <section id="hero" class="section section-hero">
+    <div class="container hero-inner">
+
+      <div class="hero-content">
+        <div class="hero-badge-row">
+          <span class="badge badge-trust">Für B2B-Dienstleister, Hausverwaltungen &amp; erklärungsbedürftige Angebote</span>
+        </div>
+
+        <h1 class="hero-headline">
+          Wir finden den Grund, warum dein&nbsp;Content keine Anfragen&nbsp;bringt.
+        </h1>
+
+        <p class="hero-subheadline">
+          Der Content Kommissar prüft Social-Media-Auftritte von Unternehmen und zeigt, welche Inhalte Vertrauen schaffen, Sichtbarkeit erhöhen und Anfragen vorbereiten.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="mailto:kontakt@content-kommissar.de?subject=Kostenloser%20Profil-Check&body=Hallo%20Content%20Kommissar%2C%0A%0Aich%20m%C3%B6chte%20einen%20kostenlosen%20Profil-Check%20anfragen.%0A%0AMein%20Unternehmen%3A%20%0AMein%20Profil%2FWebsite%3A%20%0AMein%20Ziel%3A%20%0A"
+             class="btn btn-primary btn-lg">
+            Kostenlosen Profil-Check anfragen
+          </a>
+          <a href="#prozess" class="btn btn-secondary btn-lg">So läuft die Prüfung ab</a>
+        </div>
+
+        <p class="hero-note">Kostenlos &nbsp;·&nbsp; Unverbindlich &nbsp;·&nbsp; Konkret</p>
+      </div>
+
+      <!-- Hero visual: large badge mascot -->
+      <div class="hero-visual" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" class="hero-badge-svg"
+             role="img" aria-label="Content Kommissar Dienstmarke">
+          <!-- Outer dashed ring -->
+          <circle cx="100" cy="108" r="94" fill="none" stroke="#f5c518" stroke-width="1.5"
+                  stroke-dasharray="9 5" opacity="0.5"/>
+          <!-- Main shield -->
+          <path d="M100 18 L170 46 L170 110 Q170 162 100 190 Q30 162 30 110 L30 46 Z"
+                fill="#131d2e" stroke="#f5c518" stroke-width="2.5"/>
+          <!-- Inner shield detail -->
+          <path d="M100 26 L162 52 L162 110 Q162 156 100 182 Q38 156 38 110 L38 52 Z"
+                fill="none" stroke="#f5c518" stroke-width="0.8" opacity="0.35"/>
+          <!-- Magnifying glass circle -->
+          <circle cx="97" cy="100" r="32" fill="none" stroke="#f5c518" stroke-width="3.5"/>
+          <!-- Magnifying glass handle -->
+          <line x1="120" y1="123" x2="144" y2="147" stroke="#f5c518" stroke-width="7"
+                stroke-linecap="round"/>
+          <!-- CK monogram inside glass -->
+          <text x="84" y="110" font-family="Georgia,serif" font-size="28" font-weight="900"
+                fill="#f5c518" letter-spacing="-1">CK</text>
+          <!-- Top label -->
+          <text x="100" y="57" text-anchor="middle" font-family="system-ui,sans-serif"
+                font-size="7.5" font-weight="700" fill="#f5c518" letter-spacing="3"
+                opacity="0.85" text-transform="uppercase">PROFIL-PRÜFUNG</text>
+          <!-- Bottom labels -->
+          <text x="100" y="164" text-anchor="middle" font-family="Georgia,serif"
+                font-size="10" font-weight="700" fill="#f5c518" letter-spacing="5">CONTENT</text>
+          <text x="100" y="177" text-anchor="middle" font-family="Georgia,serif"
+                font-size="10" font-weight="700" fill="#f5c518" letter-spacing="3">KOMMISSAR</text>
+          <!-- Decorative dots -->
+          <circle cx="100" cy="32" r="2.5" fill="#f5c518" opacity="0.8"/>
+          <circle cx="58"  cy="52" r="1.5" fill="#f5c518" opacity="0.5"/>
+          <circle cx="142" cy="52" r="1.5" fill="#f5c518" opacity="0.5"/>
+          <circle cx="42"  cy="110" r="1.5" fill="#f5c518" opacity="0.3"/>
+          <circle cx="158" cy="110" r="1.5" fill="#f5c518" opacity="0.3"/>
+        </svg>
+        <div class="case-tag">AKTE NR. CK-2025-001</div>
+      </div>
+
+    </div>
+    <!-- Background grid decoration -->
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+  </section>
+
+
+  <!-- ============================================================
+       2. PROBLEM SECTION
+       ============================================================ -->
+  <section id="problem" class="section section-problem">
+    <div class="container">
+      <div class="section-label">Befund</div>
+      <h2 class="section-headline reveal">Viele Profile sehen okay aus — verkaufen aber nichts.</h2>
+      <p class="section-subtext reveal">
+        Die meisten Unternehmen haben kein Reichweitenproblem. Sie haben ein Vertrauens- und Klarheitsproblem. Das ist der Unterschied zwischen Sichtbarkeit und Wirkung.
+      </p>
+
+      <div class="grid grid-3 problem-grid">
+
+        <div class="card card-problem reveal">
+          <div class="problem-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="20" cy="20" r="16" stroke="#c8102e" stroke-width="2"/>
+              <circle cx="20" cy="20" r="9"  stroke="#c8102e" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="20" cy="20" r="3.5" fill="#c8102e"/>
+              <line x1="20" y1="4"  x2="20" y2="8"  stroke="#c8102e" stroke-width="2" stroke-linecap="round"/>
+              <line x1="20" y1="32" x2="20" y2="36" stroke="#c8102e" stroke-width="2" stroke-linecap="round"/>
+              <line x1="4"  y1="20" x2="8"  y2="20" stroke="#c8102e" stroke-width="2" stroke-linecap="round"/>
+              <line x1="32" y1="20" x2="36" y2="20" stroke="#c8102e" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Unklare Positionierung</h3>
+          <p>Besucher verstehen in den ersten Sekunden nicht, was das Unternehmen macht, für wen es da ist und warum es die richtige Wahl ist. Kein klares Profil, keine Anfrage.</p>
+        </div>
+
+        <div class="card card-problem reveal">
+          <div class="problem-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M20 4 L34 10 L34 22 Q34 32 20 36 Q6 32 6 22 L6 10 Z" stroke="#c8102e" stroke-width="2"/>
+              <path d="M20 10 L29 14 L29 22 Q29 28 20 31 Q11 28 11 22 L11 14 Z" stroke="#c8102e" stroke-width="1" opacity="0.4"/>
+              <line x1="14" y1="20" x2="18" y2="24" stroke="#c8102e" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="18" y1="24" x2="26" y2="16" stroke="#c8102e" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Zu wenig Vertrauen</h3>
+          <p>Allgemeine Aussagen wie „Wir sind zuverlässig" überzeugen niemanden. Ohne Einblicke, Belege und klare Stimme wirkt jedes Profil wie das nächste.</p>
+        </div>
+
+        <div class="card card-problem reveal">
+          <div class="problem-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="4" y="14" width="24" height="12" rx="3" stroke="#c8102e" stroke-width="2"/>
+              <line x1="8" y1="19" x2="19" y2="19" stroke="#c8102e" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="8" y1="23" x2="15" y2="23" stroke="#c8102e" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M30 20 L37 14 M30 20 L37 26 M30 20 L23 20" stroke="#c8102e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Kein klarer nächster Schritt</h3>
+          <p>Wer sich interessiert, weiß nicht, was er tun soll. Kein Angebot. Kein Link. Keine Einladung. Der Interessent geht — und kommt selten zurück.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       3. PROCESS / INVESTIGATION SECTION
+       ============================================================ -->
+  <section id="prozess" class="section section-process">
+    <div class="container">
+      <div class="section-label">Ermittlungsverfahren</div>
+      <h2 class="section-headline reveal">So arbeitet der Content Kommissar</h2>
+      <p class="section-subtext reveal">
+        Jede Prüfung läuft nach einem klaren Verfahren ab. Kein Bauchgefühl, keine Floskel-Checkliste — sondern ein strukturierter Blick auf das, was deinen Außenauftritt wirksam oder wirkungslos macht.
+      </p>
+
+      <div class="process-steps">
+
+        <div class="process-step reveal">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Akte eröffnen</h3>
+            <p>Du schickst uns deinen Profil-Link und zwei Sätze zu deinem Ziel. Wir erfassen Plattform, Branche und Status quo — die Akte wird angelegt.</p>
+          </div>
+        </div>
+
+        <div class="process-connector" aria-hidden="true"></div>
+
+        <div class="process-step reveal">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Profil prüfen</h3>
+            <p>Wir analysieren Profilbild, Bio, Verlinkungen und den ersten Eindruck. Was sieht jemand Fremdes, wenn er dein Profil zum ersten Mal öffnet?</p>
+          </div>
+        </div>
+
+        <div class="process-connector" aria-hidden="true"></div>
+
+        <div class="process-step reveal">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Content-Lücken finden</h3>
+            <p>Welche Inhalte fehlen? Wo fehlt Vertrauen? Wo ist der Call-to-Action unklar? Wir identifizieren die drei größten Hebel für dein Profil.</p>
+          </div>
+        </div>
+
+        <div class="process-connector" aria-hidden="true"></div>
+
+        <div class="process-step reveal">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Bessere Inhalte vorschlagen</h3>
+            <p>Du bekommst konkrete Empfehlungen: Welcher Inhalt fehlt, wie er aussehen soll und welchen Effekt er auf Vertrauen und Anfragen hat.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       4. KOSTENLOSER PROFIL-CHECK DETAILS
+       ============================================================ -->
+  <section id="profil-check" class="section section-check">
+    <div class="container">
+      <div class="check-inner">
+
+        <div class="check-content">
+          <div class="section-label">Kostenlose Erstprüfung</div>
+          <h2 class="section-headline reveal">Was beim Profil-Check konkret geprüft wird</h2>
+          <p class="section-subtext reveal">
+            Der kostenlose Check ist kein allgemeines Feedback. Wir schauen uns an, was wirklich fehlt — und schreiben es dir schwarz auf weiß.
+          </p>
+
+          <ul class="check-list">
+            <li class="reveal">
+              <span class="check-item-icon" aria-hidden="true">◉</span>
+              <div>
+                <strong>Profilbild &amp; erster Eindruck</strong>
+                <span>Wirkt das Profil professionell und vertrauenswürdig auf Anhieb?</span>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="check-item-icon" aria-hidden="true">◉</span>
+              <div>
+                <strong>Bio &amp; Beschreibung</strong>
+                <span>Ist sofort klar, was du anbietest, für wen und warum du die richtige Wahl bist?</span>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="check-item-icon" aria-hidden="true">◉</span>
+              <div>
+                <strong>Content-Struktur</strong>
+                <span>Was postest du, wie oft, und macht es einen echten Unterschied?</span>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="check-item-icon" aria-hidden="true">◉</span>
+              <div>
+                <strong>Vertrauenssignale</strong>
+                <span>Was überzeugt Besucher, dass du der Richtige für ihren Auftrag bist?</span>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="check-item-icon" aria-hidden="true">◉</span>
+              <div>
+                <strong>Call-to-Action</strong>
+                <span>Wissen Interessenten, was sie als Nächstes tun sollen?</span>
+              </div>
+            </li>
+            <li class="reveal">
+              <span class="check-item-icon" aria-hidden="true">◉</span>
+              <div>
+                <strong>Anfrage-Logik</strong>
+                <span>Bereitet dein Content den Weg zu einer echten Anfrage vor — oder endet er ins Leere?</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="mailto:kontakt@content-kommissar.de?subject=Kostenloser%20Profil-Check&body=Hallo%20Content%20Kommissar%2C%0A%0Aich%20m%C3%B6chte%20einen%20kostenlosen%20Profil-Check%20anfragen.%0A%0AMein%20Unternehmen%3A%20%0AMein%20Profil%2FWebsite%3A%20%0AMein%20Ziel%3A%20%0A"
+             class="btn btn-primary btn-lg reveal">
+            Profil-Check anfragen
+          </a>
+        </div>
+
+        <!-- Akte / File card visual -->
+        <div class="check-visual reveal" aria-hidden="true">
+          <div class="akte-card">
+            <div class="akte-header">
+              <span class="akte-stamp">VERTRAULICH</span>
+              <span class="akte-number">AKTE NR. CK-2025-XXX</span>
+            </div>
+            <div class="akte-field">
+              <span class="akte-label">Unternehmen</span>
+              <span class="akte-value akte-blank">______________________</span>
+            </div>
+            <div class="akte-field">
+              <span class="akte-label">Plattform</span>
+              <span class="akte-value akte-blank">______________________</span>
+            </div>
+            <div class="akte-field">
+              <span class="akte-label">Branche</span>
+              <span class="akte-value akte-blank">______________________</span>
+            </div>
+            <div class="akte-field">
+              <span class="akte-label">Befund</span>
+              <div class="akte-findings">
+                <div class="akte-finding">☐ Positionierung unklar</div>
+                <div class="akte-finding">☐ Vertrauenssignale fehlen</div>
+                <div class="akte-finding">☐ Call-to-Action fehlt</div>
+                <div class="akte-finding">☐ Anfrage-Logik nicht erkennbar</div>
+                <div class="akte-finding">☐ Content ohne Strategie</div>
+              </div>
+            </div>
+            <div class="akte-footer">CONTENT KOMMISSAR · ERMITTLUNGSDIENST</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       5. ANGEBOTE / PRICING
+       ============================================================ -->
+  <section id="angebote" class="section section-offers">
+    <div class="container">
+      <div class="section-label">Leistungen</div>
+      <h2 class="section-headline reveal">Was der Content Kommissar anbietet</h2>
+      <p class="section-subtext reveal">
+        Von der kostenlosen Erstprüfung bis zur laufenden Betreuung. Klare Leistungen, klare Preise, keine versteckten Kosten.
+      </p>
+
+      <div class="grid grid-3 offers-grid">
+
+        <!-- A: Free Check -->
+        <div class="card card-offer reveal">
+          <div class="offer-tag">Einstieg</div>
+          <h3 class="offer-name">Kostenloser Profil-Check</h3>
+          <div class="offer-price">0 €</div>
+          <p class="offer-desc">
+            Der erste Blick in die Akte. Wir prüfen deinen Social-Media-Auftritt und zeigen konkret, wo die größten Lücken sind.
+          </p>
+          <ul class="offer-features">
+            <li>Analyse von Profil &amp; Bio</li>
+            <li>Bewertung des ersten Eindrucks</li>
+            <li>3 konkrete Handlungsempfehlungen</li>
+            <li>Schriftliches Feedback per E-Mail</li>
+          </ul>
+          <a href="mailto:kontakt@content-kommissar.de?subject=Kostenloser%20Profil-Check&body=Hallo%20Content%20Kommissar%2C%0A%0Aich%20m%C3%B6chte%20einen%20kostenlosen%20Profil-Check%20anfragen.%0A%0AMein%20Unternehmen%3A%20%0AMein%20Profil%2FWebsite%3A%20%0AMein%20Ziel%3A%20%0A"
+             class="btn btn-secondary btn-full">Jetzt anfragen</a>
+        </div>
+
+        <!-- B: Social-Media-Akte (FEATURED) -->
+        <div class="card card-offer card-featured reveal">
+          <div class="offer-tag offer-tag-featured">Beliebt</div>
+          <h3 class="offer-name">Social-Media-Akte</h3>
+          <div class="offer-price">ab 349 €</div>
+          <p class="offer-desc">
+            Einmalige Tiefenanalyse deines gesamten Außenauftritts. Du bekommst eine vollständige Fallakte mit konkreten Maßnahmen.
+          </p>
+          <ul class="offer-features">
+            <li>Vollständige Profilanalyse</li>
+            <li>Content-Strategie-Empfehlung</li>
+            <li>10 fertige Post-Ideen für deine Branche</li>
+            <li>Positionierungs-Vorschlag</li>
+            <li>Bio-Optimierung inklusive</li>
+            <li>Schriftliche Fallakte als PDF</li>
+          </ul>
+          <a href="mailto:kontakt@content-kommissar.de?subject=Social-Media-Akte%20anfragen&body=Hallo%20Content%20Kommissar%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20die%20Social-Media-Akte.%0A%0AMein%20Unternehmen%3A%20%0AMein%20Profil%2FWebsite%3A%20%0AMeine%20Ziele%3A%20%0A"
+             class="btn btn-primary btn-full">Jetzt anfragen</a>
+        </div>
+
+        <!-- C: Starter monthly -->
+        <div class="card card-offer reveal">
+          <div class="offer-tag">Laufend</div>
+          <h3 class="offer-name">Content-Kommissar Starter</h3>
+          <div class="offer-price">ab 699 €<span class="offer-period">/Monat</span></div>
+          <p class="offer-desc">
+            Laufende Content-Betreuung für B2B-Dienstleister. Wir übernehmen Planung und Erstellung — du konzentrierst dich auf dein Kerngeschäft.
+          </p>
+          <ul class="offer-features">
+            <li>8 Posts pro Monat inkl. Text</li>
+            <li>Monatliche Strategie-Abstimmung</li>
+            <li>Content-Kalender &amp; Planung</li>
+            <li>Laufende Profiloptimierung</li>
+            <li>Monatliches Reporting</li>
+          </ul>
+          <a href="mailto:kontakt@content-kommissar.de?subject=Content-Kommissar%20Starter%20anfragen&body=Hallo%20Content%20Kommissar%2C%0A%0Aich%20interessiere%20mich%20f%C3%BCr%20den%20Content-Kommissar%20Starter.%0A%0AMein%20Unternehmen%3A%20%0AMein%20Profil%2FWebsite%3A%20%0AMeine%20Ziele%3A%20%0A"
+             class="btn btn-secondary btn-full">Jetzt anfragen</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       6. ZIELGRUPPE / FOR WHOM
+       ============================================================ -->
+  <section id="zielgruppe" class="section section-audience">
+    <div class="container">
+      <div class="section-label">Zuständigkeit</div>
+      <h2 class="section-headline reveal">Für wen ist der Content Kommissar?</h2>
+      <p class="section-subtext reveal">
+        Der Content Kommissar spezialisiert sich auf Branchen, in denen Vertrauen verkauft — nicht Reichweite. Wer erklärungsbedürftige Leistungen anbietet, braucht andere Inhalte als ein Onlineshop.
+      </p>
+
+      <div class="audience-grid">
+
+        <div class="audience-card reveal">
+          <div class="audience-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="8"  y="18" width="32" height="22" rx="2" stroke="#f5c518" stroke-width="2"/>
+              <path d="M16 18 V14 Q16 9 20 9 H28 Q32 9 32 14 V18" stroke="#f5c518" stroke-width="2"/>
+              <rect x="19" y="26" width="10" height="10" rx="1" stroke="#f5c518" stroke-width="1.5"/>
+              <line x1="8"  y1="26" x2="40" y2="26" stroke="#f5c518" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3>Hausverwaltungen</h3>
+          <p>Komplexe Leistungen klar kommunizieren und Eigentümer überzeugen.</p>
+        </div>
+
+        <div class="audience-card reveal">
+          <div class="audience-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M24 6 L40 16 V40 H8 V16 Z" stroke="#f5c518" stroke-width="2"/>
+              <rect x="18" y="28" width="12" height="12" stroke="#f5c518" stroke-width="1.5"/>
+              <line x1="20" y1="6" x2="20" y2="2" stroke="#f5c518" stroke-width="1.5"/>
+              <line x1="24" y1="4" x2="24" y2="0" stroke="#f5c518" stroke-width="1.5"/>
+              <line x1="28" y1="6" x2="28" y2="2" stroke="#f5c518" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Immobiliendienstleister</h3>
+          <p>Makler, Verwalter, Gutachter — Vertrauen als Wettbewerbsvorteil.</p>
+        </div>
+
+        <div class="audience-card reveal">
+          <div class="audience-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="24" cy="18" r="10" stroke="#f5c518" stroke-width="2"/>
+              <path d="M10 42 Q10 30 24 30 Q38 30 38 42" stroke="#f5c518" stroke-width="2" stroke-linecap="round"/>
+              <line x1="20" y1="18" x2="24" y2="14" stroke="#f5c518" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="24" y1="14" x2="28" y2="18" stroke="#f5c518" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Beratungsunternehmen</h3>
+          <p>Expertise sichtbar machen und qualifizierte Mandanten gewinnen.</p>
+        </div>
+
+        <div class="audience-card reveal">
+          <div class="audience-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="8" y="10" width="32" height="28" rx="3" stroke="#f5c518" stroke-width="2"/>
+              <path d="M16 26 L21 31 L32 19" stroke="#f5c518" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="8" y1="18" x2="40" y2="18" stroke="#f5c518" stroke-width="1.5" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Finanz- &amp; Versicherungsdienstleister</h3>
+          <p>Komplexe Themen verständlich und überzeugend kommunizieren.</p>
+        </div>
+
+        <div class="audience-card reveal">
+          <div class="audience-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="24" cy="24" r="16" stroke="#f5c518" stroke-width="2"/>
+              <circle cx="24" cy="24" r="8"  stroke="#f5c518" stroke-width="1.5" opacity="0.5"/>
+              <line x1="24" y1="8"  x2="24" y2="16" stroke="#f5c518" stroke-width="2"/>
+              <line x1="8"  y1="24" x2="16" y2="24" stroke="#f5c518" stroke-width="2"/>
+              <line x1="32" y1="24" x2="40" y2="24" stroke="#f5c518" stroke-width="2"/>
+              <line x1="24" y1="32" x2="24" y2="40" stroke="#f5c518" stroke-width="2"/>
+              <circle cx="24" cy="24" r="3" fill="#f5c518" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Regionale B2B-Dienstleister</h3>
+          <p>Lokale Expertise online sichtbar machen und regionale Anfragen generieren.</p>
+        </div>
+
+      </div>
+
+      <div class="audience-note reveal">
+        <p>
+          <strong>Nicht dabei?</strong> Der Content Kommissar arbeitet grundsätzlich mit jedem Unternehmen, das komplexe oder erklärungsbedürftige Leistungen anbietet.
+          <a href="mailto:kontakt@content-kommissar.de?subject=Passt%20das%20zu%20uns%3F&body=Hallo%20Content%20Kommissar%2C%0A%0Aich%20bin%20in%20der%20Branche%3A%20%0A%0AKurze%20Beschreibung%20unseres%20Angebots%3A%20%0A">Kurz anfragen</a> — wir prüfen das.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       7. CONTENT EXAMPLES
+       ============================================================ -->
+  <section id="beispiele" class="section section-examples">
+    <div class="container">
+      <div class="section-label">Fallbeispiele</div>
+      <h2 class="section-headline reveal">Was aus einer Prüfung wird</h2>
+      <p class="section-subtext reveal">
+        Keine abstrakten Empfehlungen. Konkrete Inhaltsideen, die Vertrauen aufbauen und Anfragen vorbereiten.
+      </p>
+
+      <div class="grid grid-2 examples-grid">
+
+        <div class="example-card reveal">
+          <div class="example-meta">
+            <span class="example-platform">LinkedIn · Beitrag</span>
+            <span class="example-type">Aufklärung</span>
+          </div>
+          <h3 class="example-headline">
+            „Warum gute Hausverwaltung mehr ist als Nebenkostenabrechnung"
+          </h3>
+          <p class="example-desc">
+            Zeigt, welche unsichtbare Arbeit hinter professioneller Verwaltung steckt — und warum der günstigste Anbieter oft der teuerste ist.
+          </p>
+          <span class="example-tag">Vertrauen aufbauen</span>
+        </div>
+
+        <div class="example-card reveal">
+          <div class="example-meta">
+            <span class="example-platform">LinkedIn · Ratgeber</span>
+            <span class="example-type">Entscheidungshilfe</span>
+          </div>
+          <h3 class="example-headline">
+            „3 Fehler, die Eigentümer bei der Wahl einer Verwaltung vermeiden sollten"
+          </h3>
+          <p class="example-desc">
+            Positioniert das Unternehmen als Experten — ohne plumpe Eigenwerbung. Wer die Fehler kennt, wählt instinktiv den Richtigen.
+          </p>
+          <span class="example-tag">Positionierung stärken</span>
+        </div>
+
+        <div class="example-card reveal">
+          <div class="example-meta">
+            <span class="example-platform">LinkedIn · Analyse</span>
+            <span class="example-type">Profiloptimierung</span>
+          </div>
+          <h3 class="example-headline">
+            „Warum dein LinkedIn-Profil keine Anfrage vorbereitet"
+          </h3>
+          <p class="example-desc">
+            Erklärt, warum viele B2B-Profile zwar sichtbar sind, aber keine Handlung auslösen — und was konkret fehlt, um das zu ändern.
+          </p>
+          <span class="example-tag">Anfrage-Logik verbessern</span>
+        </div>
+
+        <div class="example-card reveal">
+          <div class="example-meta">
+            <span class="example-platform">LinkedIn · Storytelling</span>
+            <span class="example-type">Content-Transformation</span>
+          </div>
+          <h3 class="example-headline">
+            „Aus ‚Wir sind zuverlässig' wird ein echter Vertrauenspost"
+          </h3>
+          <p class="example-desc">
+            Zeigt Schritt für Schritt, wie man nichtssagende Marketingfloskeln in glaubwürdige Inhalte verwandelt, die tatsächlich wirken.
+          </p>
+          <span class="example-tag">Content verbessern</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       8. FAQ
+       ============================================================ -->
+  <section id="faq" class="section section-faq">
+    <div class="container faq-container">
+      <div class="section-label">Offene Fragen</div>
+      <h2 class="section-headline reveal">Häufige Fragen</h2>
+
+      <div class="faq-list">
+
+        <details class="faq-item reveal">
+          <summary class="faq-question">Muss ich selbst vor die Kamera?</summary>
+          <div class="faq-answer">
+            <p>Nein. Der Content Kommissar ist selbst anonym — und das aus gutem Grund. Viele Kunden wollen keine persönliche Marke aufbauen, sondern ihr Unternehmen professionell positionieren. Wir entwickeln Inhalte, die ohne Kamera funktionieren: Erklärungen, Checklisten, Einblicke, Meinungsbeiträge und Fallbeispiele.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary class="faq-question">Ist das nur für Instagram?</summary>
+          <div class="faq-answer">
+            <p>Nein. Im B2B-Bereich ist LinkedIn meist die relevanteste Plattform — aber wir prüfen und betreuen auch XING, Facebook, Instagram und andere Kanäle. Was wir nicht tun: pauschale Strategien für alle Plattformen gleichzeitig. Wir schauen zuerst, wo deine Zielgruppe tatsächlich ist — und konzentrieren die Energie dort.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary class="faq-question">Funktioniert das auch für konservative Branchen?</summary>
+          <div class="faq-answer">
+            <p>Ja — und gerade dort ist der Unterschied am größten. Branchen wie Hausverwaltung, Finanzberatung oder Versicherungen haben kaum Wettbewerb im Content-Bereich. Wer dort früh konsequent Vertrauen aufbaut, gewinnt. Wir arbeiten mit Tonalitäten, die zur Branche passen: professionell, klar, überzeugend — ohne Marketing-Aufgeregtheit.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary class="faq-question">Was bekomme ich beim kostenlosen Profil-Check?</summary>
+          <div class="faq-answer">
+            <p>Du bekommst eine schriftliche Einschätzung deines Außenauftritts: Was funktioniert, wo die größten Schwächen sind und welche drei konkreten Maßnahmen den größten Unterschied machen würden. Der Check ist kein Verkaufsgespräch, sondern ein ehrlicher Blick in die Akte — ohne Verpflichtung, ohne Folgeanruf.</p>
+          </div>
+        </details>
+
+        <details class="faq-item reveal">
+          <summary class="faq-question">Arbeitet ihr mit KI?</summary>
+          <div class="faq-answer">
+            <p>Ja, teilweise. KI ist ein Werkzeug, das wir strategisch einsetzen — für Recherche, Ideen und Textentwürfe. Die Redaktion, Strategie und das Qualitätsurteil liegen beim Content Kommissar. Was du bekommst, ist kein generierter Output, sondern durchdachter Content, der zu deiner Branche und deinem Ziel passt.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       9. FINAL CTA
+       ============================================================ -->
+  <section id="cta-final" class="section section-final-cta">
+    <div class="container">
+      <div class="final-cta-inner">
+
+        <div class="final-cta-badge" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+            <circle cx="40" cy="40" r="36" fill="none" stroke="#f5c518" stroke-width="1.5"
+                    stroke-dasharray="6 4" opacity="0.6"/>
+            <path d="M40 8 L66 18 L66 44 Q66 62 40 72 Q14 62 14 44 L14 18 Z"
+                  fill="#131d2e" stroke="#f5c518" stroke-width="2"/>
+            <circle cx="38" cy="38" r="13" fill="none" stroke="#f5c518" stroke-width="2.5"/>
+            <line x1="47" y1="47" x2="58" y2="58" stroke="#f5c518" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <h2 class="final-cta-headline reveal">
+          Soll der Content Kommissar deine Akte eröffnen?
+        </h2>
+        <p class="final-cta-sub reveal">
+          Du schickst uns deinen Profil-Link. Wir schicken dir einen ehrlichen Befund.
+        </p>
+        <a href="mailto:kontakt@content-kommissar.de?subject=Kostenloser%20Profil-Check&body=Hallo%20Content%20Kommissar%2C%0A%0Aich%20m%C3%B6chte%20einen%20kostenlosen%20Profil-Check%20anfragen.%0A%0AMein%20Unternehmen%3A%20%0AMein%20Profil%2FWebsite%3A%20%0AMein%20Ziel%3A%20%0A"
+           class="btn btn-primary btn-xl reveal">
+          Kostenlosen Profil-Check anfragen
+        </a>
+        <p class="final-cta-note reveal">Unverbindlich. Konkret. Ohne Marketing-Blabla.</p>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="26" height="26" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="#f5c518" stroke-width="1.5"
+                  stroke-dasharray="5 3" opacity="0.6"/>
+          <path d="M20 4 L33 9.5 L33 22 Q33 31 20 36 Q7 31 7 22 L7 9.5 Z"
+                fill="#131d2e" stroke="#f5c518" stroke-width="1.5"/>
+          <circle cx="19" cy="19.5" r="7" fill="none" stroke="#f5c518" stroke-width="1.5"/>
+          <line x1="24.5" y1="25" x2="30" y2="30" stroke="#f5c518" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <span>Content Kommissar</span>
+      </div>
+      <p class="footer-tagline">Wir finden den Grund, warum dein Content keine Anfragen bringt.</p>
+      <a href="mailto:kontakt@content-kommissar.de" class="footer-email">
+        kontakt@content-kommissar.de
+      </a>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer-Navigation">
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+      <a href="mailto:kontakt@content-kommissar.de">Kontakt</a>
+    </nav>
+
+    <p class="footer-copy">© 2025 Content Kommissar &nbsp;·&nbsp; content-kommissar.de</p>
+
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- Nav CTA: show after hero scrolled past -->
+<script>
+  (function(){
+    const navCta = document.getElementById("nav-cta");
+    if (!navCta) return;
+    const hero = document.getElementById("hero");
+    const observer = new IntersectionObserver(function(entries){
+      navCta.style.display = entries[0].isIntersecting ? "none" : "inline-flex";
+    }, { threshold: 0 });
+    if (hero) observer.observe(hero);
+  })();
+</script>
+
+</body>
+</html>
