@@ -615,6 +615,24 @@ strong { color: var(--text); font-weight: 700; }
   font-weight: 700;
 }
 
+/* Teaser line under pricing cards */
+.offers-teaser {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-faint);
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.offers-teaser-icon {
+  color: var(--gold);
+  font-size: 1rem;
+}
+
 /* ============================================================
    ZIELGRUPPE / AUDIENCE SECTION
    ============================================================ */
@@ -630,7 +648,7 @@ strong { color: var(--text); font-weight: 700; }
   margin-bottom: 2rem;
 }
 @media (min-width: 768px)  { .audience-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 1024px) { .audience-grid { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 1024px) { .audience-grid { grid-template-columns: repeat(3, 1fr); } }
 .audience-card {
   background: var(--surface-2);
   border: 1px solid var(--border);
@@ -665,7 +683,13 @@ strong { color: var(--text); font-weight: 700; }
    CONTENT EXAMPLES SECTION
    ============================================================ */
 .section-examples {}
-.examples-grid { gap: 1.25rem; }
+/* 6 Beispiele: 1→2→3 Spalten */
+.examples-grid {
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px)  { .examples-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .examples-grid { grid-template-columns: repeat(3, 1fr); } }
 .example-card {
   background: var(--surface);
   border: 1px solid var(--border);
